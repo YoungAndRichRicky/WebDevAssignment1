@@ -1,0 +1,494 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+
+  /* Hikkaduwa Hatchery page styles Starts here*/
+
+.sec1 {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+
+#Hikkapage {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/Hikkaduwa.jpg");
+}
+
+
+
+.logo {
+  width: 250px;
+  cursor: pointer;
+  height: auto;
+  left: 0px;
+  margin-left: 20px;
+  
+}
+
+.mainNav {
+  width: 100%;
+  margin: auto;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+   opacity: 0.6;
+
+}
+.mainNav ul li {
+  list-style: none;
+  display: inline-block;
+  
+  margin: 0 25px;
+}
+
+.mainNav ul li a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+  
+padding: 14px 0;
+  cursor: pointer;
+
+  background-image: linear-gradient(#8fc1e3, #8fc1e3);
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: 0.5s ease;
+} 
+
+.mainNav a:hover{
+  background-size: 100% 5px, auto;
+}
+
+
+
+.intro { 
+  color: #f7f0fb;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  word-spacing: 10px;
+}
+
+.intro h1 {
+  font-size: 3em;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.ReadMorelink {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 34px;
+  font-size: 16px;
+  background: #687864;
+  position: relative;
+  cursor: pointer;
+}
+
+.ReadMorelink:hover{
+  background: #31708e;
+  color: white;
+  transition: 1s;
+}
+
+footer{
+  box-sizing: border-box;
+  background-color: #31708e;
+  padding: 70px 0;
+
+}
+
+.footer {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row ul {
+  list-style: none;
+}
+.row ul li {
+  line-height: 2;
+}
+.col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.col h3{
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  position: relative;
+  color: #f7f0fb;
+}
+
+.col h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #8fc1e3;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.col ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #f7f0fb;
+  font-weight: 350;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.col ul li a:hover {
+  color: #f7f0fb;
+  padding-left: 10px;
+}
+
+.col .icons a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 15px 15px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: #f7f0fb;
+  transition: all 0.5s ease;
+}
+
+.col .icons a:hover {
+  color: #31708e;
+  background-color: #f7f0fb;
+}
+
+
+#HikkaIntro {
+  width: 55%;
+  top: 55%;
+  left: 30%;
+  padding: 30px 20px;
+  background: black;
+  opacity: 0.75;
+  border-radius: 30px;
+}
+
+#HikkaIntro h1 {
+  font-family: 'Prata', serif;
+  font-size: 3em;
+  letter-spacing: 2.5px;
+}
+
+#HikkaIntro p {
+  font-family: 'Work Sans', sans-serif;
+  text-align: left;
+  padding: 0 20px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.HikkaSec{
+   width: 75%;
+   margin: auto;
+   text-align: left;
+   padding-top: 70px;
+}
+
+
+.HikkaSub{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5em;
+  background: linear-gradient(to bottom, transparent 40%, #8fc1e3,#5085a5);
+}
+
+.HikkaSec p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5;  
+}
+
+.HikkaLocation h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  color: #5085a5;
+  font-weight: bold;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.HikkaLocation iframe {
+  width: 100%;
+  height: 70vh;
+}
+
+
+#Hsec5 {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.BookLink{
+  display: flex;
+  justify-content: center;
+}
+
+.BookNowlink {
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  padding: 16px 50px;
+  font-size: 30px;
+  border-style: double;
+  border-color: white;
+  border-width: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.BookNowlink:hover{
+  color: black;
+  background-color: white;
+  border-style: double;
+  border-color: black;
+
+}
+
+
+/* Hikkaduwa Hatchery page styles ends here*/
+
+ /* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+  /* tickets page styles begins here*/
+
+  .tickets1 #ticketspage {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.tickets1 .logo {
+  width: 140px;
+  cursor: pointer;
+  height: auto;
+  left: 0px;
+  margin-right: 20px;
+  
+}
+
+.tickets1 .mainNav {
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #687864; 
+}
+
+.tickets1 h1 {
+  font-size: 3.5em;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+}
+
+.container1 {
+  width: 65%;
+  padding: 10px 50px 10px 180px;
+}
+
+#ticketDates {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#ticketDates h1 {
+  font-size: 1.5em;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#ticketGuests {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+}
+
+#ticketGuests h1 {
+  font-size: 1.5em;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#ticketDuration {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+#ticketDuration h1 {
+  font-size: 1.5em;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#ticketDuration table{
+  width: 80%;
+}
+
+#ticketDuration table, td{
+  border: 1px solid black;
+  text-align: center;
+}
+
+#ticketDuration td{
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.mt-10 {
+margin-bottom: 150px;
+}
+
+.tickets1 #detailspage {
+height: auto;
+margin-bottom: 0;
+} 
+
+.peak {
+color: Blue;
+}
+
+.normal {
+color: red;
+}
+
+.btn {
+display: flex;
+justify-content: space-between;
+margin-right: 60px;
+}
+
+#guestGrid {
+padding: 20px 50px;
+
+}
+
+
+.guest-elements {
+font-size: 1.1em;
+padding: 10px 0 10px 50px;
+}
+
+.btnAdd:hover {
+background-color: #687864;
+color: #f7f0fb;
+}
+
+.btnRemove:hover {
+background-color: #687864;
+color: #f7f0fb;}
+
+.btnAdd {
+border: 1px solid #565656; 
+border-radius: 50%;
+color:  #565656; 
+padding: 12px 16px; 
+font-size: 17px; 
+cursor: pointer; 
+}
+
+.btnRemove {
+border: 1px solid #565656; 
+border-radius: 50%;
+color:  #565656; 
+padding: 12px 16px; 
+font-size: 17px; 
+cursor: pointer; 
+}
+
+.container2 {
+width: 35%;
+padding: 0px 20px;
+padding-top: 5rem;
+
+}
+
+.summaryTable table {
+border: 4px solid black;
+margin: 0;
+width: auto;
+
+}
+
+.summaryTable td {
+border: 2px solid black;
+padding: 20px;
+}
+
+.container {
+display: flex;
+}
+
+.btn .ticketValue {
+text-align: center;
+padding: 10px 0;
+font-size: 1.3em;
+}
+
+
+.summaryTableFinal table {
+  border: 4px solid black;
+margin: auto;
+width: 50%;
+margin-bottom: 10rem;
+}
+
+.summaryTableFinal td {
+  border: 2px solid black;
+padding: 5px;
+}
+
+
+.errorMessage {
+color: red;
+font-size: 0.8em;
+}
+
+#paymentContainer{
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+
+
+#refreshBtn{
+  margin-top: 10px;
+}
