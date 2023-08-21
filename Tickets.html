@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets - SL Turtles</title>
+
+    <!-- link to get the plus and minus icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- External CSS links -->
+    <link rel="stylesheet" href="Styles/index2.css">
+    <link type="text/css" rel="stylesheet" href="Styles/responsive2.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+
+
+</head>
+
+
+<body>
+
+ 
+
+    <section class ="tickets1" id="ticketspage">
+        
+        <div class="mainNav">
+          
+
+            
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                </ul>
+
+                <h1>Buy Tickets</h1>
+
+                <img src="Images/logo.png" class="logo" alt="SL-Turtles-logo">
+
+            
+        </div>
+
+        
+    </section>
+
+<div class="container">
+
+  
+
+    <div class="container1">
+    
+    <section id="ticketDates">
+
+      <br>  <h1>When are you coming?</h1>   <br>
+
+        <input id="datepicker" class="block rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" >
+
+        <p class="errorMessage" id="displayDateError"></p>
+        
+        
+
+        
+    </section>
+
+
+
+    
+
+
+    <section id="ticketGuests">
+
+        <h1>Guests</h1>  <br>
+
+        <div id="guestGrid" class="grid grid-cols-2 gap-y-6">
+
+          <div class="guest-elements">
+            <p>SL Adult</p>
+          </div>
+
+          <div class="btn">
+            <button class="btnAdd" onclick="incrementTicket('ticketNumber1')"><i class="fa-solid fa-plus"></i></button>
+            <span class="ticketValue" id="ticketNumber1">0</span>
+            <button class="btnRemove" onclick="decrementTicket('ticketNumber1')"><i class="fa fa-minus"></i></button>
+
+          </div> 
+
+          <div class="guest-elements">
+            <p>SL Child</p>
+          </div>
+
+          <div class="btn">
+            <button class="btnAdd" onclick="incrementTicket('ticketNumber2')"><i class="fa-solid fa-plus"></i></button>
+            <span class="ticketValue" id="ticketNumber2">0</span>
+            <button class="btnRemove" onclick="decrementTicket('ticketNumber2')"><i class="fa fa-minus"></i></button>
+            </div> 
+
+
+          <div class="guest-elements">
+            <p>Foreigner Adult</p>
+             </div>
+
+             <div class="btn">
+                <button class="btnAdd" onclick="incrementTicket('ticketNumber3')"><i class="fa-solid fa-plus"></i></button>
+                <span class="ticketValue" id="ticketNumber3">0</span>
+                <button class="btnRemove" onclick="decrementTicket('ticketNumber3')"><i class="fa fa-minus"></i></button>
+                </div> 
+       
+          <div class="guest-elements">
+            <p>Foreigner Child</p>
+             </div>
+
+             <div class="btn">
+                <button class="btnAdd" onclick="incrementTicket('ticketNumber4')"><i class="fa-solid fa-plus"></i></button>
+                <span class="ticketValue" id="ticketNumber4">0</span>
+                <button class="btnRemove" onclick="decrementTicket('ticketNumber4')"><i class="fa fa-minus"></i></button>
+                </div> 
+        
+          <div class="guest-elements">
+            <p>Infant</p>
+            </div>
+
+            <div class="btn">
+                <button class="btnAdd" onclick="incrementTicket('ticketNumber5')"><i class="fa-solid fa-plus"></i></button>
+                <span class="ticketValue" id="ticketNumber5">0</span>
+                <button class="btnRemove" onclick="decrementTicket('ticketNumber5')"><i class="fa fa-minus"></i></button>
+                </div> 
+        
+        </div>
+
+
+
+        
+        
+
+        
+    </section>
+
+    <section id="ticketDuration">
+
+        <h1>Duration</h1>  
+        <br>
+
+        <table id="ticketDurationTable">
+          <tr>
+            <td></td>
+            <td><span class="normal">Normal Hour</span> </td>
+            <td><span class="peak">Peak Hour</span></td>
+           
+          </tr>
+          <tr id="Foreigner_Adult">
+            <td>Foreigner Adult</td>
+            <td>10 USD</td>
+            <td>13 USD</td>
+          
+          </tr>
+          <tr id="Foreigner_Child">
+            <td>Foreigner Child</td>
+            <td>5 USD</td>
+            <td>8 USD</td>
+            
+          </tr>
+          <tr id="SL_Adult">
+            <td>SL Adult</td>
+            <td>4 USD</td>
+            <td>6 USD</td>
+            
+          </tr>
+          <tr id="SL_Child">
+            <td>SL Child</td>
+            <td>2 USD</td>
+            <td>3 USD</td>
+            
+          </tr>
+          <tr id="Infa">
+            <td>Infant</td>
+            <td>Free</td>
+            <td>Free</td>
+            
+          </tr>
+         
+        </table>
+
+
+            
+        <br><br>
+
+
+      <div class="relative mt-2.5">
+        <p class="errorMessage" id="displayTimeError"></p>
+            <input id="timepicker" class="block border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <select id="time" name="time" class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset  focus:ring-indigo-600 sm:text-sm" onchange="timeforcal()">
+                <option>Select a Time</option>
+                <option class="normal" id="opt-normal-1">07:00 - 08:00</option>     
+                <option class="normal" id="opt-normal-2">08:00 - 09:00</option>
+                <option class="normal" id="opt-normal-3">09:00 - 10:00</option>
+                <option class="peak"  id="opt-peak-1">10:00 - 11:00</option>
+                <option class="peak" id="opt-peak-2">11:00 - 12:00</option>
+                <option class="peak" id="opt-peak-3">12:00 - 13:00</option>
+                <option class="normal" id="opt-normal-4">13:00 - 14:00</option>
+                <option class="normal" id="opt-normal-5">14:00 - 15:00</option>
+                <option class="peak" id="opt-peak-4">15:00 - 16:00</option>
+                <option class="peak" id="opt-peak-5">16:00 - 17:00</option>
+                <option class="peak" id="opt-peak-6">17:00 - 18:00</option>     
+
+              </select>
+            </div>
+          </div> 
+
+          <br><br>
+
+<!-- Display selected time slots here -->
+          <div id="selectedTimeSlots" class="mt-2"></div>
+
+
+
+        
+     
+
+
+        <div class="mt-10">
+          <a href="Details.html"> 
+            <button type="submit" class="block mx-auto w-1/2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Continue with purchase 
+            </button>
+            </a>
+        </div>
+        
+    </section>
+
+</div>
+
+
+<div class="container2">
+  <div class="summaryTable">
+
+      <table>
+
+          <tr>
+              <td colspan="2">Date</td>
+              <td id="displayDate"></td>
+
+          </tr>
+
+          <tr>
+              <td colspan="2">Time</td>
+              <td id="displayTime"></td>
+
+          </tr>
+
+          <tr>
+              <td colspan="2">Duration</td>
+              <td> <span id="totalDuration"></span> hrs</td>
+
+          </tr>
+
+          <tr>
+              <td colspan="2"><b>Tickets</b></td>
+              <td><b>Charges</b></td>
+
+          </tr>
+
+          <tr id="ForeignerAdult">
+            <td>Foreigner Adult</td>
+            
+            <td id="FAcount"></td>
+            <td id="FAtot"></td>
+          </tr>
+
+          <tr id="ForeignerChild">
+            <td>Foreigner Child</td>
+            
+            <td id="FCcount"></td>
+            <td id="FCtot"></td>
+          </tr>
+          <tr id="SLAdult">
+            <td>SL Adult</td>
+           
+            <td id="SLAcount"></td>
+            <td id="SLAtot"></td>
+          </tr>
+          <tr id="SLChild">
+            <td>SL Child</td>
+            
+            <td id="SLCcount"></td>
+            <td id="SLCtot"></td>
+          </tr>
+          <tr id="Infant">
+            <td>Infant</td>
+          
+            <td id="Inafantcount"></td>
+            <td id="InafantTot">Free</td>
+          </tr>
+
+
+          <tr>
+              <td colspan="2">Total</td>
+              <td id="Total"></td>
+
+          </tr>
+
+
+
+      </table>
+
+  </div>
+<button id="refreshBtn" class="float-left block w-1/4 rounded-md bg-indigo-600 px-1.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" onclick="refresh()">
+    Refresh
+  </button> 
+
+  </div>
+
+
+      
+  </div>
+
+
+  <footer>
+    <div class="footer">
+        <div class="row">
+            <div class="col">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Get Help</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Donation Status</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Follow us</h3>
+                <div class = "icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    <script src="Scripts/tickets.js"></script>
+
+
+
+
+
+
+    
+</body>
+</html>
